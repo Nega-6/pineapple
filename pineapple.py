@@ -24,7 +24,7 @@ class Choice:
         self.command = command
         self.destination = destination
         
-Menu = StoryPiece("Welcome to Castle Destroyer! The Calculus AB/BC review game. All answers are multiple choice and lower case. Simply type 'a', 'b', 'c' etc to provide an answer. Type 'start' to begin.  When the game ends type 'return' to restart. Type 'start' to begin.") 
+Menu = StoryPiece("Welcome to Castle Destroyer! The Calculus AB/BC review game. All answers are multiple choice and lower case. Simply type 'a', 'b', 'c' or 'd' to provide an answer. Type 'start' to begin.  When the game ends type 'return' to restart.") 
 
 R1 = StoryPiece("You awake to find yourself in a dark, moldy cell. There is a shaded hallway on the other side of your cell door and there are no windows.  A guard walks by your cell and whispers some obscenities to you before continuing. As he steps away the ring containing his keys clatters to the floor just outside your door. Type 'next' to continue.")
 
@@ -34,7 +34,7 @@ R3 = StoryPiece("You wrap your arm around the guards neck from behind and subdue
 
 R4 = StoryPiece("You finally make it to the bottom of the maddeningly long staircase to find a lone door at the bottom.  In your excitement you jump through the door to find yourself in a crowded kitchen.  In the craziness noone immediately notices you, but you have to get out quickly before someone wises up to the fact that you stink more than a horse in heat in the middle of summer. Type 'next' to continue.")
 
-R5 = StoryPiece("You make it through the back door to the castle and end up in the small plain behind the castle, flooded with mood. A step to your right causes the ground to collapse revealing a spike pit.  You manage to pull back just in time in order to not fall in.  You have to move quickly, there are archers in the towers watching the yard. A moments hesitation can mean the end. Type 'next' to continue.")
+R5 = StoryPiece("You make it through the back door to the castle and end up in the small field behind the castle, flooded with mud. A step to your right causes the ground to collapse revealing a spike pit.  You manage to pull back just in time in order to not fall in.  You have to move quickly, there are archers in the towers watching the yard. A moments hesitation can mean the end. Type 'next' to continue.")
 
 R6 = StoryPiece("You carefully maneuver through the open field around to the side of the castle. A few more traps were activated and narrowly missed on the way, but you manage to avoid alerting any guards. Ahead of you, to the right, on the the side of the castle is the door your looking for. The door down to the armory! Type 'next' to continue.")
 
@@ -94,7 +94,7 @@ Q2 = StoryPiece("Integral of du = ? A:u+c B:du+dc C:du+c D:u")
 
 Q3 = StoryPiece("d/dx cosx = ? A:-sinx B:sinx")
 
-Q4 = StoryPiece("Integral from 1 to 3 of -x^2 + 4x -3dx = ? A:6/3 B: -4/3:)
+Q4 = StoryPiece("Integral from 1 to 3 of -x^2 + 4x -3dx = ? A:6/3 B: -4/3")
 
 Q5 = StoryPiece("Summation of 1/n^p if p = 1/3 A:Converges B:Diverges C:Cannot be determined")
 
@@ -102,7 +102,7 @@ Q6 = StoryPiece("Integral of e^x = ? A:e^x + c B:12 C:e^x^x")
 
 Q7 = StoryPiece("Integral of x^2 = ? A:2x+c B:1/2x^2 +c C:2+c D: 1/3x^3 +c")
 
-Q8 = StoryPiece("Integral from 1 to 2 of x^2 = ? A:1/3 B:2/3 C:7 D:3")
+Q8 = StoryPiece("Integral from 1 to 2 of x^2 = ? A:7/3 B:2/3 C:7 D:3")
 
 Q9 = StoryPiece("d/dx x^6 + 3x^5 + 7x +3 = ? A: 601231 B:6x^5 +15x^4 C:6x^5 + 15x^4 + 7")
 
