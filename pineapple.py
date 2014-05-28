@@ -246,9 +246,37 @@ Q15.add_choice(Choice("c",D15))
 
 Menu.add_choice(Choice("start",R1))
 
-restart = sys.stdin.readline().rstrip()
-    if restart = "return"
-        print Menu
+D1.add_choice((Choice("restart"Menu))
+
+D2.add_choice((Choice("restart"Menu))
+
+D3.add_choice((Choice("restart"Menu))
+
+D4.add_choice((Choice("restart"Menu))
+
+D5.add_choice((Choice("restart"Menu))
+
+D6.add_choice((Choice("restart"Menu))
+
+D7.add_choice((Choice("restart"Menu))
+
+D8.add_choice((Choice("restart"Menu))
+
+D9.add_choice((Choice("restart"Menu))
+
+D10.add_choice((Choice("restart"Menu))
+
+D11.add_choice((Choice("restart"Menu))
+
+D12.add_choice((Choice("restart"Menu))
+
+D13.add_choice((Choice("restart"Menu))
+
+D14.add_choice((Choice("restart"Menu))
+
+D15.add_choice((Choice("restart"Menu))
+
+R16.add_choice((Choice("restart"Menu))
 
 part = Menu
 
