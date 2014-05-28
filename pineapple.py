@@ -16,7 +16,7 @@ class StoryPiece:
             for choice in self.choices:
                 if data == choice.command:
                     return choice.destination
-            print "You had one job. Type the right thing."
+            print "You had one job. Type the right thing. Remember lower case."
             
 
 class Choice:
@@ -24,7 +24,7 @@ class Choice:
         self.command = command
         self.destination = destination
         
-Menu = StoryPiece("Welcome to Castle Destroyer! The Calculus AB/BC review game. All answers are multiple choice and lower case. Simply type 'a', 'b', 'c' etc to provide an answer. Type 'start' to begin.  When the game ends type 'return' to restart.") 
+Menu = StoryPiece("Welcome to Castle Destroyer! The Calculus AB/BC review game. All answers are multiple choice and lower case. Simply type 'a', 'b', 'c' etc to provide an answer. Type 'start' to begin.  When the game ends type 'return' to restart. Type 'start' to begin.") 
 
 R1 = StoryPiece("You awake to find yourself in a dark, moldy cell. There is a shaded hallway on the other side of your cell door and there are no windows.  A guard walks by your cell and whispers some obscenities to you before continuing. As he steps away the ring containing his keys clatters to the floor just outside your door. Type 'next' to continue.")
 
@@ -55,6 +55,38 @@ R13 = StoryPiece("You manage to strike down the guard before the gate completely
 R14 = StoryPiece("You rush in to the blacksmith's and lock the door behind you. You step away and you can see the door bending as the guards outside ram in to it.  You take a look around the room and there is not much to see, there are twenty or so kegs littering the floor, and a tanning rack covered in fresh cloth. To the side of the rack is the smeltery, still lit. You peek in to one of the kegs to find it full of gunpowder. The same seems to be true of the rest. The door begins to crack under the strength of the guards slamming in to it. Type 'next' to continue.")
 
 R15 = StoryPiece("You light a piece of cloth from the tanning rack and tuck it in to one of the powder kegs.  You find a ladder in the corner of the room and climb up it on to the roof. You wait until you feel the time is right, and you jump for the gate. Landing feet before it and sliding under it. Before any of the guards have time to react they are blown from this world by the awesome power of these powder kegs. The gate slams shut and you start to walk away.  As the rest of the castle starts the blow up behind you. Type 'next' to continue.")
+
+R16 = StoryPiece("You won the game. Big woop. Cool guys don't look at explosions, you did it. Bye bye now. Type 'return' to restart")
+
+D1 = StoryPiece("You are as loud and obnoxious as possible when reaching for the keys so you manage to alert the guard who returns and picks up his keys. GAME OVER.")
+
+D2 = StoryPiece("As you move forward to choke out the guard, you trip in to him. When you do this, he turns around and bonks you over the head with his club.  You pass out and wake up chained to the wall in your cell. GAME OVER.")
+
+D3 = StoryPiece("You being the clumbsy person that you are, you trip and tumble down the stairs. It was a pretty long fall, you broke everything on the way down. GAME OVER.")
+
+D4 = StoryPiece("Your stench is overwhelming. A group of cooks turn to you and in a disgusted rage start beating you with pots and pans. GAME OVER.")
+
+D5 = StoryPiece("You begin moving through the maze of traps, and things seem fine at first. In overwhelming joy for being so quick and nimble, you jump forward. As a result, you land in a spike trap. GAME OVER.")
+
+D6 = StoryPiece("You take way too long getting where you need to go, and an archer spots you from his post. An arrow swiftly zooms through the air and goes in one ear and out the other. GAME OVER.")
+
+D7 = StoryPiece("You feel along the wall and stumble upon a switch. You decide that flipping it can't hurt and it fills the hallway with flames. At least you could see for a second before death. GAME OVER.")
+
+D8 = StoryPiece("You stumble and fumble through the armmor, being extremely obnoxious you alert the guards in the next room. The storm the room and start beating you, and slashing you up with their swords. GAME OVER.")
+
+D9 = StoryPiece("You feel along the wall and stumble upon a switch. You decide that flipping it can't hurt and it fills the hallway with flames. At least you could see for a second before death. GAME OVER.")
+
+D10 = StoryPiece("You stare at the guard in a daze. You make the decision of indecision, and you are ended in a single blow.")
+
+D11 = StoryPiece("As you move towards the two guards to fight back, you slip and fall on to their swords. WAY TO GO, THEY DIDNT EVEN HAVE TO DO ANYTHING. GAME OVER.")
+
+D12 = StoryPiece("You rush towards the gate and try to slide under, but you dont make it through in time and are immediately crushed. GAME OVER.")
+
+D13 = StoryPiece("You stand around and get captured. You are returned to your cell after a stern whipping. GAME OVER.")
+
+D14 = StoryPiece("This plan wasn't as smart as you thought, and you blow yourself up. Good job...GAME OVER.")
+
+D15 = StoryPiece("You look at the explosion...cool guys dont look at explosions. GAME OVER.")
 
 Q1 = StoryPiece("d/dx CU = ? A:c'u  B:cu'  C:c'u'  D:du")
 
@@ -115,6 +147,108 @@ R13.add_choice(Choice("next", Q13))
 R14.add_choice(Choice("next", Q14))
 
 R15.add_choice(Choice("next", Q15))
+
+Q1.add_choice(Choice("a",D1))
+
+Q1.add_choice(Choice("b",R2))
+
+Q1.add_choice(Choice("c",D1))
+
+Q1.add_choice(Choice("d",D1))
+
+Q2.add_choice(Choice("a",R3))
+
+Q2.add_choice(Choice("b",D2))
+
+Q2.add_choice(Choice("c",D2))
+
+Q2.add_choice(Choice("d",D2))
+
+Q3.add_choice(Choice("a",R4))
+
+Q3.add_choice(Choice("b",D3))
+
+Q4.add_choice(Choice("a",D4))
+
+Q4.add_choice(Choice("b",R5))
+
+Q5.add_choice(Choice("a",D5))
+
+Q5.add_choice(Choice("b",R6))
+
+Q5.add_choice(Choice("c",D5))
+
+Q6.add_choice(Choice("a",R7))
+
+Q6.add_choice(Choice("b",D6))
+
+Q6.add_choice(Choice("c",D6))
+
+Q7.add_choice(Choice("a",D7))
+
+Q7.add_choice(Choice("b",D7))
+
+Q7.add_choice(Choice("c",D7))
+
+Q7.add_choice(Choice("d",R8))
+
+Q8.add_choice(Choice("a",R9))
+
+Q8.add_choice(Choice("b",D8))
+
+Q8.add_choice(Choice("c",D8))
+
+Q8.add_choice(Choice("d",D8))
+
+Q9.add_choice(Choice("a",D9))
+
+Q9.add_choice(Choice("b",D9))
+
+Q9.add_choice(Choice("c",R10))
+
+Q10.add_choice(Choice("a",D10))
+
+Q10.add_choice(Choice("b",D10))
+
+Q10.add_choice(Choice("c",R11))
+
+Q10.add_choice(Choice("d",D10))
+
+Q11.add_choice(Choice("a",D11))
+
+Q11.add_choice(Choice("b",D11))
+
+Q11.add_choice(Choice("c",D11))
+
+Q11.add_choice(Choice("d",R12))
+
+Q12.add_choice(Choice("a",R13))
+
+Q12.add_choice(Choice("b",D12))
+
+Q13.add_choice(Choice("a",D13))
+
+Q13.add_choice(Choice("b",D13))
+
+Q13.add_choice(Choice("c",R14))
+
+Q13.add_choice(Choice("d",D13))
+
+Q14.add_choice(Choice("a",D14))
+
+Q14.add_choice(Choice("b",R15))
+
+Q15.add_choice(Choice("a",D15))
+
+Q15.add_choice(Choice("b",R16))
+
+Q15.add_choice(Choice("c",D15))
+
+Menu.add_choice(Choice("start",R1))
+
+restart = sys.stdin.readline().rstrip()
+    if restart = "return"
+        print Menu
 
 part = Menu
 
