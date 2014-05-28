@@ -56,6 +56,66 @@ R14 = StoryPiece("You rush in to the blacksmith's and lock the door behind you. 
 
 R15 = StoryPiece("You light a piece of cloth from the tanning rack and tuck it in to one of the powder kegs.  You find a ladder in the corner of the room and climb up it on to the roof. You wait until you feel the time is right, and you jump for the gate. Landing feet before it and sliding under it. Before any of the guards have time to react they are blown from this world by the awesome power of these powder kegs. The gate slams shut and you start to walk away.  As the rest of the castle starts the blow up behind you. Type 'next' to continue.")
 
+Q1 = StoryPiece("d/dx CU = ? A:c'u  B:cu'  C:c'u'  D:du")
+
+Q2 = StoryPiece("Integral of du = ? A:u+c B:du+dc C:du+c D:u")
+
+Q3 = StoryPiece("d/dx cosx = ? A:-sinx B:sinx")
+
+Q4 = StoryPiece("Integral from 1 to 3 of -x^2 + 4x -3dx = ? A:6/3 B: -4/3:)
+
+Q5 = StoryPiece("Summation of 1/n^p if p = 1/3 A:Converges B:Diverges C:Cannot be determined")
+
+Q6 = StoryPiece("Integral of e^x = ? A:e^x + c B:12 C:e^x^x")
+
+Q7 = StoryPiece("Integral of x^2 = ? A:2x+c B:1/2x^2 +c C:2+c D: 1/3x^3 +c")
+
+Q8 = StoryPiece("Integral from 1 to 2 of x^2 = ? A:1/3 B:2/3 C:7 D:3")
+
+Q9 = StoryPiece("d/dx x^6 + 3x^5 + 7x +3 = ? A: 601231 B:6x^5 +15x^4 C:6x^5 + 15x^4 + 7")
+
+Q10 = StoryPiece("d/dx 3x^2 A:5x B:1231 C:6x D:42")
+
+Q11 = StoryPiece("If d/dx represents speed, what will taking the integral yield? A:Speed B:Acceleration C:Nothing D:Position")
+
+Q12 = StoryPiece("What is another term for anti-derivative that may include bounds? A:Integral B:Summation")
+
+Q13 = StoryPiece("Fluffy the kitty accelerates at 6m/s. How can you determine his speed at time x=t? A:Take the derivative B:Use summation C:Take the integral and plug in t for x D:Take the integral")
+
+Q14 = StoryPiece("On a position time graph, what represents the velocity? A: Slope of the tangent line B: Slope")
+
+Q15 = StoryPiece("The ratio test is useful for what type of problem? A:Derivative B:Summation C:Integral")
+
+R1.add_choice(Choice("next", Q1))
+
+R2.add_choice(Choice("next", Q2))
+
+R3.add_choice(Choice("next", Q3))
+
+R4.add_choice(Choice("next", Q4))
+
+R5.add_choice(Choice("next", Q5))
+
+R6.add_choice(Choice("next", Q6))
+
+R7.add_choice(Choice("next", Q7))
+
+R8.add_choice(Choice("next", Q8))
+
+R9.add_choice(Choice("next", Q9))
+
+R10.add_choice(Choice("next", Q10))
+
+R11.add_choice(Choice("next", Q11))
+
+R12.add_choice(Choice("next", Q12))
+
+R13.add_choice(Choice("next", Q13))
+
+R14.add_choice(Choice("next", Q14))
+
+R15.add_choice(Choice("next", Q15))
+
 part = Menu
 
 while True:
